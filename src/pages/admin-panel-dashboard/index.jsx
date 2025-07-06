@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthenticatedHeader from '../../components/ui/AuthenticatedHeader';
+<<<<<<< HEAD
 // import AdminSidebar from './components/AdminSidebar';
+=======
+import AdminSidebar from './components/AdminSidebar';
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
 import MetricsCard from './components/MetricsCard';
 import PendingActionsQueue from './components/PendingActionsQueue';
 import SystemStatusMonitor from './components/SystemStatusMonitor';
@@ -108,12 +112,17 @@ const AdminPanelDashboard = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <div className="pt-16 p-8 space-y-8">
+=======
+    <div className="min-h-screen bg-surface">
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       <AuthenticatedHeader
         user={mockUser}
         notifications={mockNotifications}
         onLogout={handleLogout}
       />
+<<<<<<< HEAD
       <div className="mb-8">
         <h1 className="text-3xl font-heading font-bold text-text-primary mb-2">
           {t.title}
@@ -155,6 +164,75 @@ const AdminPanelDashboard = () => {
       </div>
       <div className="bg-white rounded-xl shadow p-8">
         <QuickActions />
+=======
+      
+      <div className="flex pt-16">
+        {/* Sidebar */}
+        <div className="hidden lg:block fixed left-0 top-16 bottom-0 z-sidebar">
+          <AdminSidebar />
+        </div>
+        
+        {/* Main Content */}
+        <div className="flex-1 lg:ml-64">
+          <div className="p-6">
+            {/* Header Section */}
+            <div className="mb-8">
+              <h1 className="text-3xl font-heading font-bold text-text-primary mb-2">
+                {t.title}
+              </h1>
+              <p className="text-text-secondary">
+                {t.subtitle}
+              </p>
+            </div>
+
+            {/* Metrics Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              {metricsData.map((metric, index) => (
+                <MetricsCard
+                  key={index}
+                  title={metric.title}
+                  value={metric.value}
+                  change={metric.change}
+                  changeType={metric.changeType}
+                  icon={metric.icon}
+                  color={metric.color}
+                />
+              ))}
+            </div>
+
+            {/* Main Dashboard Grid */}
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-8">
+              {/* Left Column - Pending Actions */}
+              <div className="xl:col-span-2">
+                <PendingActionsQueue />
+              </div>
+              
+              {/* Right Column - System Status */}
+              <div>
+                <SystemStatusMonitor />
+              </div>
+            </div>
+
+            {/* Quick Actions */}
+            <div className="mb-8">
+              <QuickActions />
+            </div>
+
+            {/* Bottom Grid */}
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+              {/* Recent Anomalies Table */}
+              <div className="xl:col-span-2">
+                <RecentAnomaliesTable />
+              </div>
+              
+              {/* User Activity Log */}
+              <div>
+                <UserActivityLog />
+              </div>
+            </div>
+          </div>
+        </div>
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       </div>
     </div>
   );

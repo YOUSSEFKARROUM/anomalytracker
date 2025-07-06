@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "@dhiwise/component-tagger": "^1.0.9",
+<<<<<<< HEAD
     "@headlessui/react": "^2.2.4",
     "@reduxjs/toolkit": "^2.6.1",
     "@supabase/supabase-js": "^2.50.3",
+=======
+    "@reduxjs/toolkit": "^2.6.1",
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
     "@tailwindcss/forms": "^0.5.7",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
@@ -21,7 +25,10 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.55.0",
+<<<<<<< HEAD
     "react-hot-toast": "^2.5.2",
+=======
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
     "react-router-dom": "6.0.2",
     "react-router-hash-link": "^2.4.3",
     "recharts": "^2.15.2",
@@ -60,10 +67,17 @@
     "@tailwindcss/typography": "^0.5.16",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.2",
+<<<<<<< HEAD
     "cypress": "^14.5.1",
+=======
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
     "postcss": "8.4.8",
     "tailwindcss": "3.4.6",
     "vite": "5.0.0",
     "vite-tsconfig-paths": "3.6.0"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60

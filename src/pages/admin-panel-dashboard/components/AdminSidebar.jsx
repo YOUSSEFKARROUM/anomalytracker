@@ -46,49 +46,84 @@ const AdminSidebar = () => {
     {
       label: t.userManagement,
       icon: 'Users',
+<<<<<<< HEAD
       path: '/admin/user-management',
+=======
+      path: '#user-management',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.anomalyOversight,
       icon: 'AlertTriangle',
+<<<<<<< HEAD
       path: '/admin/anomaly-supervision',
+=======
+      path: '#anomaly-oversight',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.contentManagement,
       icon: 'FileText',
+<<<<<<< HEAD
       path: '/admin/content-management',
+=======
+      path: '#content-management',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.systemConfig,
       icon: 'Settings',
+<<<<<<< HEAD
       path: '/admin/system-configuration',
+=======
+      path: '#system-config',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.reports,
       icon: 'BarChart3',
+<<<<<<< HEAD
       path: '/admin/reports',
+=======
+      path: '#reports',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.notifications,
       icon: 'Bell',
+<<<<<<< HEAD
       path: '/admin/notifications',
+=======
+      path: '#notifications',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     },
     {
       label: t.settings,
       icon: 'Cog',
+<<<<<<< HEAD
       path: '/admin/settings',
+=======
+      path: '#settings',
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
       active: false
     }
   ];
 
   const isActive = (path) => {
+<<<<<<< HEAD
     return location.pathname === path;
+=======
+    if (path === '/admin-panel-dashboard') {
+      return location.pathname === path;
+    }
+    return false;
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
   };
 
   return (

@@ -10,6 +10,7 @@ import AdminPanelDashboard from "pages/admin-panel-dashboard";
 import AnomalyTrackingDashboard from "pages/anomaly-tracking-dashboard";
 import AnomalyReportingForm from "pages/anomaly-reporting-form";
 import NotFound from "pages/NotFound";
+<<<<<<< HEAD
 import UserManagementPage from "pages/UserManagementPage";
 import AnomalySupervisionPage from "pages/AnomalySupervisionPage";
 import ContentManagementPage from "pages/ContentManagementPage";
@@ -18,6 +19,8 @@ import ReportsPage from "pages/ReportsPage";
 import NotificationsPage from "pages/NotificationsPage";
 import SettingsPage from "pages/SettingsPage";
 import RootLayout from "components/layouts/RootLayout";
+=======
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
 
 const Routes = () => {
   return (
@@ -25,11 +28,16 @@ const Routes = () => {
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes>
+<<<<<<< HEAD
         {/* Public routes */}
+=======
+        {/* Define your routes here */}
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
         <Route path="/" element={<LandingPage />} />
         <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/news-and-updates" element={<NewsAndUpdates />} />
         <Route path="/authentication-login-register" element={<AuthenticationLoginRegister />} />
+<<<<<<< HEAD
         <Route path="/anomaly-tracking-dashboard" element={<AnomalyTrackingDashboard />} />
         <Route path="/anomaly-reporting-form" element={<AnomalyReportingForm />} />
         {/* Admin routes with layout */}
@@ -43,6 +51,11 @@ const Routes = () => {
           <Route path="/admin/notifications" element={<NotificationsPage />} />
           <Route path="/admin/settings" element={<SettingsPage />} />
         </Route>
+=======
+        <Route path="/admin-panel-dashboard" element={<AdminPanelDashboard />} />
+        <Route path="/anomaly-tracking-dashboard" element={<AnomalyTrackingDashboard />} />
+        <Route path="/anomaly-reporting-form" element={<AnomalyReportingForm />} />
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>

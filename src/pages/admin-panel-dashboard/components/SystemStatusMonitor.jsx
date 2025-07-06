@@ -122,8 +122,13 @@ const SystemStatusMonitor = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="bg-white border border-border rounded-xl shadow p-8">
       <div className="border-b border-border pb-6 mb-6">
+=======
+    <div className="bg-background border border-border rounded-lg shadow-card">
+      <div className="p-6 border-b border-border">
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-heading font-semibold text-text-primary">
             {t.title}
@@ -134,6 +139,7 @@ const SystemStatusMonitor = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {systemServices.map((service, index) => (
@@ -142,6 +148,17 @@ const SystemStatusMonitor = () => {
                 <div className="flex items-center space-x-2 min-w-0">
                   <Icon name={service.icon} size={16} className="text-text-secondary" />
                   <span className="text-sm font-semibold text-text-primary break-words whitespace-normal max-w-[7.5rem]">
+=======
+      
+      <div className="p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {systemServices.map((service, index) => (
+            <div key={index} className={`p-4 rounded-lg border ${getStatusBgColor(service.status)}`}>
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center space-x-2">
+                  <Icon name={service.icon} size={16} className="text-text-secondary" />
+                  <span className="text-sm font-semibold text-text-primary">
+>>>>>>> bc000c11974367210cfab4d6dedc04071ffb1d60
                     {service.name}
                   </span>
                 </div>
